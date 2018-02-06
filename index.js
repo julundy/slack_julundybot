@@ -16,8 +16,8 @@ const server = app.listen(process.env.PORT || 3000, () => {
 
 app.get('/', (req, res) => {
     let env = req.query.text
-    let dispatcher0 = 'http://' + user + ':' + pass + '@vwweb-qa-' + env + '-dispatcher-000.vwusasite.com:80/dispatcher/invalidate.cache/';
-    let dispatcher1 = 'http://' + user + ':' + pass + '@vwweb-qa-' + env + '-dispatcher-001.vwusasite.com:80/dispatcher/invalidate.cache/';    
+    let dispatcher0 = 'http://' + user + ':' + pass + '@vwweb-qa-' + env + '-dispatcher-000.vwusasite.com:80/dispatcher/invalidate.cache';
+    let dispatcher1 = 'http://' + user + ':' + pass + '@vwweb-qa-' + env + '-dispatcher-001.vwusasite.com:80/dispatcher/invalidate.cache';    
     let text = 'Environment #' + env + ' is cleared!';
 
     request
