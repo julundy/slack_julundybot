@@ -1,25 +1,32 @@
 {
   "name": "slack_julundybot",
   "version": "1.0.0",
-  "description": "Handles slash commands to interact with Jenkins.",
+  "description": "Handles slash commands for internal tech.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "(https://github.com/ludie/slack_julundybot"
+    "url": "git+https://github.com/ludie/slack_julundybot.git"
   },
   "keywords": [
     "slack",
-    "jenkins",
-    "slash",
-    "commands"
+    "slash command"
   ],
-  "author": "Justin lundy",
-  "license": "ISC",
+  "author": "Justin Lundy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ludie/slack_julundybot/issues"
+  },
+  "homepage": "https://github.com/ludie/slack_julundybot#readme",
+  "engines": {
+    "node": "5.1.1"
+  },
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2"
+    "botkit": "0.0.5",
+    "botkit-storage-mongo": "^1.0.2",
+    "mongodb": "^2.2.19"
   }
 }
